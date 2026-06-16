@@ -1,11 +1,11 @@
 ```text
- █████╗ ██╗      ██████╗  ██████╗ ███████╗███╗   ██╗██╗██████╗
-██╔══██╗██║     ██╔════╝ ██╔═══██╗██╔════╝████╗  ██║██║██╔══██╗
-███████║██║     ██║  ███╗██║   ██║███████╗██╔██╗ ██║██║██████╔╝
-██╔══██║██║     ██║   ██║██║   ██║╚════██║██║╚██╗██║██║██╔═══╝
-██║  ██║███████╗╚██████╔╝╚██████╔╝███████║██║ ╚████║██║██║
-╚═╝  ╚═╝╚══════╝ ╚═════╝  ╚═════╝ ╚══════╝╚═╝  ╚═══╝╚═╝╚═╝
-            // D S & A   P A T T E R N   T R A I N E R
+ ██████╗ ██████╗ ██████╗ ███████╗ ██████╗██╗      ██████╗ ███████╗███████╗
+██╔════╝██╔═══██╗██╔══██╗██╔════╝██╔════╝██║     ██╔═══██╗╚══███╔╝██╔════╝
+██║     ██║   ██║██║  ██║█████╗  ██║     ██║     ██║   ██║  ███╔╝ █████╗
+██║     ██║   ██║██║  ██║██╔══╝  ██║     ██║     ██║   ██║ ███╔╝  ██╔══╝
+╚██████╗╚██████╔╝██████╔╝███████╗╚██████╗███████╗╚██████╔╝███████╗███████╗
+ ╚═════╝ ╚═════╝ ╚═════╝ ╚══════╝ ╚═════╝╚══════╝ ╚═════╝ ╚══════╝╚══════╝
+              // D S & A   P A T T E R N   T R A I N E R
 ```
 
 <div align="center">
@@ -27,7 +27,7 @@
 
 ## `>` ABOUT
 
-**AlgoSnip** is a Wordle-style, fill-in-the-blank browser game for drilling
+**CodeCloze** is a Wordle-style, fill-in-the-blank browser game for drilling
 **data structures & algorithms** pattern recognition. You're shown a code
 snippet with key tokens blanked out — type them back in, watch them flash
 green (correct) or red (wrong), and earn stars for clean, hint-free solves.
@@ -74,8 +74,8 @@ scanlines, a vignette glow, animated `█` cursors, and ASCII progress bars.
 ## `>` QUICKSTART
 
 ```bash
-> git clone https://github.com/mishazim/algosnip.git
-> cd algosnip
+> git clone https://github.com/mishazim/codecloze.git
+> cd codecloze
 > npm install
 > npm run dev        # boot the dev server (Vite)  →  http://localhost:5173
 ```
@@ -102,7 +102,7 @@ this repo for reference:
 
 📄 [`reference/SWE_Interview_Algorithms.xlsx`](reference/SWE_Interview_Algorithms.xlsx)
 — algorithms, data structures, a Big-O cheat sheet, and common interview
-questions. It's what inspired AlgoSnip in the first place.
+questions. It's what inspired CodeCloze in the first place.
 
 ## `>` ROADMAP
 
@@ -116,5 +116,5 @@ questions. It's what inspired AlgoSnip in the first place.
 ---
 
 ```text
-ALGOSNIP // ALL SYSTEMS OPERATIONAL █
+CODECLOZE // ALL SYSTEMS OPERATIONAL █
 ```
