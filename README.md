@@ -35,6 +35,19 @@ green (correct) or red (wrong), and earn stars for clean, hint-free solves.
 It's wrapped in a CRT / hacker-terminal aesthetic: monospace Cascadia Code,
 scanlines, a vignette glow, animated `█` cursors, and ASCII progress bars.
 
+## `>` STATUS / DISCLAIMER
+
+```text
+> [ WARN ] CONTENT UNDER REVIEW — VERIFY BEFORE YOU TRUST
+```
+
+> ⚠️ **CodeCloze is a work in progress and its content is still being tested
+> for accuracy.** Automated checks pass across all **270 snippets** (90 levels
+> × Python / Java / C++) for *structure* and *syntax*, but the **algorithmic
+> correctness of every level is still being manually verified**. Treat the
+> solutions as study aids, not authoritative references — and if you spot a
+> mistake, please [open an issue](https://github.com/mishazim/codecloze/issues).
+
 ## `>` FEATURES
 
 ```text
@@ -109,9 +122,24 @@ questions. It's what inspired CodeCloze in the first place.
 ```text
 [x] Core game loop, ★ scoring, 4 ranks, progress persistence
 [x] Terminal UI: scanlines, glow, boot/glitch animations
+[x] Automated structural + syntax validation (270 snippets) — see scripts/
+[ ] Full manual correctness review of every level
 [ ] Multi-language snippets — JS / Java / C++ (LanguagePicker built, needs data)
 [ ] Live demo on GitHub Pages
 ```
+
+## `>` VALIDATION
+
+A lightweight preliminary validator lives in [`scripts/`](scripts/):
+
+```bash
+> node scripts/cc_extract.mjs | python scripts/cc_validate.py
+```
+
+It checks every level for structural integrity (placeholder ↔ blank
+alignment, no gaps/dupes, non-empty answers, unique IDs) and reconstructs
+each snippet to confirm it parses — Python via `ast.parse`, Java/C++ via a
+bracket-balance smell test. It does **not** assert algorithmic correctness.
 
 ---
 
