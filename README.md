@@ -1,16 +1,120 @@
-# React + Vite
+```text
+ █████╗ ██╗      ██████╗  ██████╗ ███████╗███╗   ██╗██╗██████╗
+██╔══██╗██║     ██╔════╝ ██╔═══██╗██╔════╝████╗  ██║██║██╔══██╗
+███████║██║     ██║  ███╗██║   ██║███████╗██╔██╗ ██║██║██████╔╝
+██╔══██║██║     ██║   ██║██║   ██║╚════██║██║╚██╗██║██║██╔═══╝
+██║  ██║███████╗╚██████╔╝╚██████╔╝███████║██║ ╚████║██║██║
+╚═╝  ╚═╝╚══════╝ ╚═════╝  ╚═════╝ ╚══════╝╚═╝  ╚═══╝╚═╝╚═╝
+            // D S & A   P A T T E R N   T R A I N E R
+```
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<div align="center">
 
-Currently, two official plugins are available:
+`> fill the blanks · earn stars · master DS&A`
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+![React](https://img.shields.io/badge/React-19-00f5ff?style=flat-square&logo=react&logoColor=black)
+![Vite](https://img.shields.io/badge/Vite-8-00ff41?style=flat-square&logo=vite&logoColor=black)
+![Tailwind](https://img.shields.io/badge/Tailwind_CSS-4-00f5ff?style=flat-square&logo=tailwindcss&logoColor=black)
+![Router](https://img.shields.io/badge/React_Router-7-00ff41?style=flat-square&logo=reactrouter&logoColor=black)
+![status](https://img.shields.io/badge/status-WIP-ffd700?style=flat-square)
 
-## React Compiler
+</div>
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+```text
+> INITIALIZING PATTERN RECOGNITION TRAINING MODULE...
+> [ TERMINAL ACTIVE ]
+```
 
-## Expanding the ESLint configuration
+## `>` ABOUT
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+**AlgoSnip** is a Wordle-style, fill-in-the-blank browser game for drilling
+**data structures & algorithms** pattern recognition. You're shown a code
+snippet with key tokens blanked out — type them back in, watch them flash
+green (correct) or red (wrong), and earn stars for clean, hint-free solves.
+
+It's wrapped in a CRT / hacker-terminal aesthetic: monospace Cascadia Code,
+scanlines, a vignette glow, animated `█` cursors, and ASCII progress bars.
+
+## `>` FEATURES
+
+```text
+[+] Fill-in-the-blank code snippets across two categories
+[+] 4 difficulty ranks with distinct neon color signatures
+[+] 10 attempts per level · click the blurred title for a hint
+[+] ★★★ scoring — three stars for a hint-free first-try solve
+[+] Progress persisted locally (localStorage) — pick up where you left off
+[+] Full keyboard navigation (arrow keys + Ctrl+Enter to EXECUTE)
+[+] Retro terminal UI: scanlines, glow, glitch + boot animations
+```
+
+## `>` DIFFICULTY RANKS
+
+| Signal | Rank | Tier | Category |
+|:------:|:-----|:-----|:---------|
+| 🟢 | `[ RANK-1 ]` | **EASY**   | `ALGORITHMS` / `DATA_STRUCTURES` |
+| 🟡 | `[ RANK-2 ]` | **MEDIUM** | `ALGORITHMS` / `DATA_STRUCTURES` |
+| 🔴 | `[ RANK-3 ]` | **HARD**   | `ALGORITHMS` / `DATA_STRUCTURES` |
+| 🟣 | `[ RANK-4 ]` | **EXPERT** | `ALGORITHMS` / `DATA_STRUCTURES` |
+
+> Ranks are **recognition difficulty** (how hard the pattern is to recall),
+> not raw time/space complexity. 100+ levels and counting.
+
+## `>` HOW TO PLAY
+
+```text
+01. SELECT CATEGORY ........ ALGORITHMS or DATA_STRUCTURES
+02. CHOOSE RANK ............ difficulty 1–4
+03. FILL THE BLANKS ........ type the missing tokens in the snippet
+04. EXECUTE ............... submit with [ EXECUTE ] or Ctrl+Enter
+05. READ THE SIGNAL ........ blanks flash green (✓) or red (✗)
+06. NEED A HINT? .......... click the blurred title (costs your ★★★)
+07. SCORE ................. solve hint-free on the first try for ★★★
+```
+
+## `>` QUICKSTART
+
+```bash
+> git clone https://github.com/mishazim/algosnip.git
+> cd algosnip
+> npm install
+> npm run dev        # boot the dev server (Vite)  →  http://localhost:5173
+```
+
+```bash
+> npm run build      # production build → ./dist
+> npm run preview    # serve the production build locally
+> npm run lint       # eslint
+```
+
+## `>` TECH STACK
+
+```text
+FRONTEND ...... React 19 · React Router 7
+BUILD ......... Vite 8
+STYLING ....... Tailwind CSS v4 · custom CRT theme · Cascadia Code
+STATE ......... React hooks + Context · localStorage persistence
+```
+
+## `>` CONTENT SOURCE
+
+Level content was seeded from my own interview-prep spreadsheet, included in
+this repo for reference:
+
+📄 [`reference/SWE_Interview_Algorithms.xlsx`](reference/SWE_Interview_Algorithms.xlsx)
+— algorithms, data structures, a Big-O cheat sheet, and common interview
+questions. It's what inspired AlgoSnip in the first place.
+
+## `>` ROADMAP
+
+```text
+[x] Core game loop, ★ scoring, 4 ranks, progress persistence
+[x] Terminal UI: scanlines, glow, boot/glitch animations
+[ ] Multi-language snippets — JS / Java / C++ (LanguagePicker built, needs data)
+[ ] Live demo on GitHub Pages
+```
+
+---
+
+```text
+ALGOSNIP // ALL SYSTEMS OPERATIONAL █
+```
