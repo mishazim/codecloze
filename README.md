@@ -16,7 +16,9 @@
 ![Vite](https://img.shields.io/badge/Vite-8-00ff41?style=flat-square&logo=vite&logoColor=black)
 ![Tailwind](https://img.shields.io/badge/Tailwind_CSS-4-00f5ff?style=flat-square&logo=tailwindcss&logoColor=black)
 ![Router](https://img.shields.io/badge/React_Router-7-00ff41?style=flat-square&logo=reactrouter&logoColor=black)
-![status](https://img.shields.io/badge/status-WIP-ffd700?style=flat-square)
+[![play](https://img.shields.io/badge/▶_play_live-00ff41?style=flat-square)](https://mishazim.github.io/codecloze/)
+
+**▶ Play it live → [mishazim.github.io/codecloze](https://mishazim.github.io/codecloze/)**
 
 </div>
 
@@ -34,19 +36,6 @@ green (correct) or red (wrong), and earn stars for clean, hint-free solves.
 
 It's wrapped in a CRT / hacker-terminal aesthetic: monospace Cascadia Code,
 scanlines, a vignette glow, animated `█` cursors, and ASCII progress bars.
-
-## `>` STATUS / DISCLAIMER
-
-```text
-> [ WARN ] CONTENT UNDER REVIEW — VERIFY BEFORE YOU TRUST
-```
-
-> ⚠️ **CodeCloze is a work in progress and its content is still being tested
-> for accuracy.** Automated checks pass across all **270 snippets** (90 levels
-> × Python / Java / C++) for *structure* and *syntax*, but the **algorithmic
-> correctness of every level is still being manually verified**. Treat the
-> solutions as study aids, not authoritative references — and if you spot a
-> mistake, please [open an issue](https://github.com/mishazim/codecloze/issues).
 
 ## `>` FEATURES
 
@@ -117,15 +106,20 @@ this repo for reference:
 — algorithms, data structures, a Big-O cheat sheet, and common interview
 questions. It's what inspired CodeCloze in the first place.
 
+📄 [`reference/CodeCloze_Cheatsheet.xlsx`](reference/CodeCloze_Cheatsheet.xlsx)
+— **answer key** (⚠️ spoilers) for every level: filled Python / Java / C++
+solutions, per-blank answers, and best-case / worst-case / space Big-O,
+organized into 8 tabs by category × difficulty.
+
 ## `>` ROADMAP
 
 ```text
 [x] Core game loop, ★ scoring, 4 ranks, progress persistence
 [x] Terminal UI: scanlines, glow, boot/glitch animations
 [x] Automated structural + syntax validation (270 snippets) — see scripts/
+[x] Live demo on GitHub Pages — mishazim.github.io/codecloze
 [ ] Full manual correctness review of every level
 [ ] Multi-language snippets — JS / Java / C++ (LanguagePicker built, needs data)
-[ ] Live demo on GitHub Pages
 ```
 
 ## `>` VALIDATION
