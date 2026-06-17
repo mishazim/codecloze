@@ -12,7 +12,7 @@ BIGO = {
     # ---- algorithms / easy ----
     "linear-search": ("O(1)", "O(n)", "O(1)"),
     "binary-search": ("O(1)", "O(log n)", "O(1)"),
-    "bubble-sort": ("O(n)", "O(n^2)", "O(1)"),
+    "bubble-sort": ("O(n^2)", "O(n^2)", "O(1)"),  # impl has no swapped-flag early exit
     "insertion-sort": ("O(n)", "O(n^2)", "O(1)"),
     "selection-sort": ("O(n^2)", "O(n^2)", "O(1)"),
     "fibonacci-memoization": ("O(n)", "O(n)", "O(n)"),
@@ -46,7 +46,7 @@ BIGO = {
     "jump-game": ("O(n)", "O(n)", "O(1)"),
     # ---- algorithms / hard ----
     "lcs": ("O(n*m)", "O(n*m)", "O(n*m)"),
-    "lis": ("O(n log n)", "O(n^2)", "O(n)"),
+    "lis": ("O(n^2)", "O(n^2)", "O(n)"),  # impl is O(n^2) DP, not patience+binary search
     "knapsack-01": ("O(n*W)", "O(n*W)", "O(n*W)"),
     "coin-change": ("O(n*amount)", "O(n*amount)", "O(amount)"),
     "edit-distance": ("O(n*m)", "O(n*m)", "O(n*m)"),
@@ -57,7 +57,7 @@ BIGO = {
     "bellman-ford": ("O(V*E)", "O(V*E)", "O(V)"),
     "quick-select": ("O(n)", "O(n^2)", "O(1)"),
     "tarjan-scc": ("O(V+E)", "O(V+E)", "O(V)"),
-    "a-star": ("O(E)", "O(b^d)", "O(V)"),
+    "a-star": ("O(E)", "O(E log V)", "O(V)"),  # explicit graph + heap; degrades to Dijkstra
     "manacher": ("O(n)", "O(n)", "O(n)"),
     "rabin-karp": ("O(n+m)", "O(n*m)", "O(1)"),
     # ---- algorithms / expert ----
@@ -69,7 +69,7 @@ BIGO = {
     "subset-generation": ("O(n * 2^n)", "O(n * 2^n)", "O(n)"),
     "bloom-filter": ("O(k)", "O(k)", "O(m bits)"),
     "aho-corasick": ("O(n+m+z)", "O(n+m+z)", "O(m * ALPHABET)"),
-    "suffix-array": ("O(n log n)", "O(n log n)", "O(n)"),
+    "suffix-array": ("O(n^2 log n)", "O(n^2 log n)", "O(n^2)"),  # naive sorted() of suffix slices
     "strassen": ("O(n^2.807)", "O(n^2.807)", "O(n^2)"),
     "matrix-chain-multiplication": ("O(n^3)", "O(n^3)", "O(n^2)"),
     # ---- data structures / easy (representative op) ----
@@ -102,11 +102,11 @@ BIGO = {
     "trie-ds": ("O(m)", "O(m)", "O(ALPHABET*N)"),
     # ---- data structures / expert ----
     "red-black-tree": ("O(log n)", "O(log n)", "O(n)"),
-    "lsm-tree": ("O(1) write", "O(log n) read", "O(n)"),
+    "lsm-tree": ("O(1) write", "O(n) read (linear SSTable scan)", "O(n)"),  # impl has no bloom/bin-search
     "bloom-filter-ds": ("O(k)", "O(k)", "O(m bits)"),
     "bitset": ("O(1) per bit", "O(n/w) range", "O(n/w)"),
     "union-find-ds": ("O(alpha(n)) ~ O(1)", "O(alpha(n))", "O(n)"),
-    "suffix-array-ds": ("O(m log n) search", "O(n log n) build", "O(n)"),
+    "suffix-array-ds": ("O(n^2 log n)", "O(n^2 log n)", "O(n^2)"),  # naive sorted() build + Kasai LCP O(n)
 }
 
 CAT_LABEL = {"algorithms": "Algorithms", "dataStructures": "Data Structures"}
